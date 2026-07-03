@@ -1,0 +1,35 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" role="img" aria-label="比特币白皮书 · 中英对照">
+  <defs>
+    <linearGradient id="coin" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#f7931a"/>
+      <stop offset="1" stop-color="#d97706"/>
+    </linearGradient>
+    <path id="arc-top" d="M 66 256 A 190 190 0 0 1 446 256"/>
+    <path id="arc-bottom" d="M 36 256 A 220 220 0 0 0 476 256"/>
+  </defs>
+
+  <!-- paper base -->
+  <circle cx="256" cy="256" r="250" fill="#fdfaf3" stroke="#d97706" stroke-width="6"/>
+  <circle cx="256" cy="256" r="228" fill="none" stroke="#d97706" stroke-width="1.5" opacity="0.55"/>
+
+  <!-- ring text -->
+  <text font-family="Georgia, 'Times New Roman', serif" font-size="30" letter-spacing="6" fill="#8a6b3a">
+    <textPath href="#arc-top" startOffset="50%" text-anchor="middle">BITCOIN WHITEPAPER</textPath>
+  </text>
+  <text font-family="'Songti SC', 'Noto Serif SC', SimSun, Georgia, serif" font-size="30" letter-spacing="10" fill="#8a6b3a">
+    <textPath href="#arc-bottom" startOffset="50%" text-anchor="middle">比特币白皮书 · 中英对照</textPath>
+  </text>
+
+  <!-- divider dots -->
+  <circle cx="66" cy="256" r="5" fill="#d97706"/>
+  <circle cx="446" cy="256" r="5" fill="#d97706"/>
+
+  <!-- coin -->
+  <circle cx="256" cy="256" r="150" fill="url(#coin)"/>
+  <circle cx="256" cy="256" r="150" fill="none" stroke="#b45309" stroke-width="3"/>
+  <circle cx="256" cy="256" r="136" fill="none" stroke="#fff8ec" stroke-width="2" opacity="0.55"/>
+
+  <!-- ₿ -->
+  <text x="256" y="330" font-family="Georgia, 'Times New Roman', serif" font-size="210" font-weight="bold"
+        text-anchor="middle" fill="#fff8ec">&#8383;</text>
+</svg>
