@@ -132,7 +132,8 @@ a { color: inherit; }
 }
 .lang-tag b { color: var(--accent); font-weight: 600; }
 
-#theme-toggle {
+#theme-toggle,
+.icon-btn {
   appearance: none;
   border: 1px solid var(--rule);
   background: var(--paper);
@@ -143,10 +144,12 @@ a { color: inherit; }
   cursor: pointer;
   display: grid;
   place-items: center;
-  transition: transform 0.25s ease, border-color 0.25s ease;
+  transition: transform 0.25s ease, border-color 0.25s ease, color 0.25s ease;
   line-height: 1;
+  text-decoration: none;
 }
 #theme-toggle:hover { transform: rotate(30deg); border-color: var(--accent); }
+.icon-btn:hover { border-color: var(--accent); color: var(--accent); transform: translateY(-2px); }
 
 /* ————— hero ————— */
 .hero {
@@ -633,6 +636,19 @@ footer .colophon {
   color: var(--ink-faint);
 }
 footer .colophon b { color: var(--accent); font-weight: 600; font-family: var(--serif-en); }
+footer .colophon-link {
+  margin-top: 0.9rem;
+  font-family: var(--serif-zh);
+  font-size: 0.8rem;
+  color: var(--ink-faint);
+}
+footer .colophon-link a {
+  color: var(--accent-strong);
+  text-decoration: none;
+  font-family: var(--mono);
+  font-size: 0.76rem;
+}
+footer .colophon-link a:hover { text-decoration: underline; }
 
 /* ————— mobile language switch ————— */
 .lang-switch {
